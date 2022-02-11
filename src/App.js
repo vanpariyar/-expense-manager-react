@@ -4,6 +4,8 @@ import AddBudgetModal from "./components/AddBudgetModal";
 import AddExpenseModal from "./components/AddExpenseModal";
 
 import BudgetCard from "./components/BudgetCard";
+import TotalBudgetCard from "./components/TotalBudgetCard";
+import UncategorizedBudgetCard from "./components/UncategorizedBudgetCard";
 import { UNCATEGORIZED_BUDGET_ID, useBudgets } from "./contexts/BudgetContext";
 
 function App() {
@@ -39,6 +41,11 @@ function App() {
                   />)
               })
             }
+            <UncategorizedBudgetCard 
+                    name={UNCATEGORIZED_BUDGET_ID} 
+                     
+                  />
+                  <TotalBudgetCard name="Total Budgets"/>
             
         </div>
     </Container>
