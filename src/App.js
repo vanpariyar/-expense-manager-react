@@ -42,10 +42,9 @@ function App() {
               })
             }
             <UncategorizedBudgetCard 
-                    name={UNCATEGORIZED_BUDGET_ID} 
-                     
-                  />
-                  <TotalBudgetCard name="Total Budgets"/>
+              name={UNCATEGORIZED_BUDGET_ID} 
+            />
+            <TotalBudgetCard name="Total Budgets"/>
             
         </div>
     </Container>
